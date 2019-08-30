@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009603562097",
+    "firebase_url": "https://kelwintantono-5ea30.firebaseio.com",
+    "project_id": "kelwintantono-5ea30",
+    "storage_bucket": "kelwintantono-5ea30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009603562097:android:f34aeeab763f16e8",
+        "android_client_info": {
+          "package_name": "com.example.kelwintantono"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009603562097-iqvlrffifmk2eequ8ttu3i6cem1sra7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kelwintantono",
+            "certificate_hash": "17ee2db5be83627b0cd8a5284ee28e2e36adf41b"
+          }
+        },
+        {
+          "client_id": "1009603562097-59kkh04ht7k5rumqiaqktmfeueojm4a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe8MME8acnCwvA0o51LUw1GyLCBfOFX2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009603562097-59kkh04ht7k5rumqiaqktmfeueojm4a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
