@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_place_detail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlaceDetailActivity"
+    android:padding="16dp"
+    android:background="@drawable/background_image_one_signup">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text_place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/image_view_place"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:background="@drawable/image_border"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edit_guest_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:hint="Guest Code"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_join_as_guest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Join As Guest"
+                android:textColor="#fff"
+                android:background="@drawable/custom_button"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edit_admin_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:hint="Admin Code"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_join_as_admin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Join As Admin"
+                android:textColor="#fff"
+                android:background="@drawable/custom_button"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_remove_this_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove This Place"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

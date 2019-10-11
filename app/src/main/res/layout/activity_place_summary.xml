@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlaceSummaryActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text_place_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Summary"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/pie_chart"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="25dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/text_no_data_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="There Is No Data Available"
+                android:textSize="20sp"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

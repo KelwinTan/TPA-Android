@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CreateFragment"
+    android:fillViewport="true"
+    android:background="@drawable/background_image_one_signup">
+
+    <RelativeLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:padding="1dp"
+                android:background="@drawable/image_border"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Name"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/edit_place_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Description"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/edit_place_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guest Code"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_guest_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Code"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_admin_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/btn_add_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Place"
+                android:textColor="#fff"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
+

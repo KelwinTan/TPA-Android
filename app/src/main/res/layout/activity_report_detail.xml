@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_one_signup"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.ReportDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_report_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:layout_marginTop="15dp"
+            android:text="Ini Judul"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_report_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_report_title"
+            android:layout_marginTop="5dp"
+            android:text="Ini Description"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/text_report_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_report_description"
+            android:layout_marginTop="5dp"
+            android:text="Ini Status"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner_report_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_report_status"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"></Spinner>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_add_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Comment"
+        android:textColor="#fff" />
+
+
+
+    <Button
+        android:id="@+id/btn_remove_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Remove Report"
+        android:textColor="#fff"
+        android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

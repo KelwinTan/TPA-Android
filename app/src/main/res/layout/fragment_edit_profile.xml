@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragment.EditProfileFragment"
+    android:background="@drawable/background_image_one_signup">
+
+    <RelativeLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/default_image_view"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    civ_border_width="2dp"
+                    civ_border_color="#FF000000"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    android:visibility="gone"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_image_view"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    civ_border_width="2dp"
+                    civ_border_color="#FF000000"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_select_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Picture"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/custom_button"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Old Password"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_old_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Password (optional)"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm New Password"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_confirm_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btn_save_changes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:background="@drawable/custom_button"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btn_confirm_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm New Password"
+                android:background="@drawable/custom_button"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlaceSettingsActivity"
+    android:fillViewport="true"
+    android:background="@drawable/background_image_one_signup">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_active_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active Role : "
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edit_guest_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:hint="Guest Code"
+                    android:textColor="#000000"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="textPassword"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_convert_to_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Convert To Guest"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/custom_button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/edit_admin_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:hint="Admin Code"
+                    android:textColor="#000000"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="textPassword"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_convert_to_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Convert To Admin"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/custom_button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_current_place_information"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <!--android:visibility="gone"-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CURRENT PLACE INFORMATION"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Place Name"
+                        android:textSize="22sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_current_place_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:hint="Place Name"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Place Desc"
+                        android:textSize="22sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_current_place_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_alignParentRight="true"
+                        android:hint="Admin Code"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guest Code"
+                        android:textSize="22sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_current_guest_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:hint="Guest Code"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin Code"
+                        android:textSize="22sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_current_admin_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:hint="Admin Code"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save_changes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btn_leave_this_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leave This Place"
+                android:textColor="#ffffff"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btn_delete_this_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete This Place"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

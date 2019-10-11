@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CameraFragment"
+    android:padding="16dp"
+    android:background="@drawable/home_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:background="@drawable/image_border"/>
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Take Photo"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_choose_from_gallery"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Choose From Library"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_make_report"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Make Report"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

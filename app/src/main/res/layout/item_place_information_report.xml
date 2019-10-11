@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_place_information_report"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_report_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="INI JUDUL"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_report_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Ini Description"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text_report_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Ini Status"/>
+
+        <TextView
+            android:id="@+id/text_you_reported_this"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="You Reported This!"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

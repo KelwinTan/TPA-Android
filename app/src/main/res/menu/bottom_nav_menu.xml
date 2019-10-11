@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/bnav_create"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:title="Create" />
+
+    <item
+        android:id="@+id/bnav_camera"
+        android:icon="@drawable/ic_camera_black_24dp"
+        android:title="Camera" />
+
+    <item
+        android:id="@+id/bnav_my_place"
+        android:icon="@drawable/ic_flag_black_24dp"
+        android:title="My Place" />
+
+    <item
+        android:id="@+id/bnav_my_report"
+        android:icon="@drawable/ic_report_black_24dp"
+        android:title="My Report" />
+
+</menu>
